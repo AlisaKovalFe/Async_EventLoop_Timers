@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .infoAbout, 
+        .infoAboutShow {
+            display:flex;
+            flex-direction: column;
+            margin: 2rem 1rem;
+        }
+
+        .item {
+            display:flex;
+            margin-bottom: 1rem;
+        }
+
+        .input1 {
+            width: 15rem;
+        }
+
+        .label {
+            width: 10rem;
+        }
+
+        .infoAboutShow {
+            width: 15rem;
+            height: 15rem;
+            border-style: solid;
+            border-width: 5px;
+            border-color: blue;
+        }
+
+        #button {
+            width: 7rem;
+            height: 2rem;
+            margin-left: 1rem;
+            border-radius: 2rem;
+            background-color: rgb(105, 105, 180);
+        }
+
+        .colorOfAnswer {
+            color: red
+        }
+
+    </style>
+</head>
+
+<body>
+    <form id="form" class="infoAbout">
+        <div class="item">
+            <label for="name" class="label">Name</label>
+            <input type="text" id="name" class="input1">
+        </div>
+
+        <div class="item">
+            <label for="surname" class="label">Surname</label>
+            <input type="text" id="surname" class="input1">
+        </div>
+
+        <div class="item">
+            <label for="surname" class="label">Like cats</label>
+            <input type="checkbox" id="cats">
+        </div>
+
+        <div class="item">
+            <label for="surname" class="label">Like cakes</label>
+            <input type="checkbox" id="cakes">
+        </div>
+    </form>
+
+    <button type="submit" id="button">Отправить</button>
+
+    <div id="answer" class="infoAboutShow"></div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
